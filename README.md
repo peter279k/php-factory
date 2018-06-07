@@ -2,11 +2,11 @@
 
 ## Introduction
 
-It's about this factory design pattern implementation in this [blog post](https://www.startutorial.com/articles/view/understanding-design-patterns-abstract-factory#top).
+It's about the factory design pattern implementation in this [blog post](https://www.startutorial.com/articles/view/understanding-design-patterns-abstract-factory#top).
 
 ## Usage
 
-Here is the example of creating the ```NyCar``` and ```NyHelicopter``` class instance via Toy factory.
+Here is the example of creating the ```NyCar``` and ```NyHelicopter``` class instance via ```NyToysFactory```.
 
 ```NyCar``` class instance:
 
