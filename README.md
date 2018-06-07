@@ -30,3 +30,26 @@ $nyHelicopter = $nyToyFactory->createToy('helicopter'));
 echo $nyHelicopter->price; //300000
 echo $nyHelicopter->name; //NyHelicopter
 ```
+
+Prepare the ```NyCar```
+
+```
+$nyToyFactory = new NyToysFactory();
+$nyCar = $nyToyFactory->createToy('car');
+$nyCar->prepare();
+$wheels = $nyCar->wheels; //array count is 4
+foreach($wheels as $nyWheel) {
+    echo $nyWheel->name; //wheel
+    echo $nyWheel->number; //1
+}
+```
+Prepare the ```NyHelicopter```
+
+```
+$nyToyFactory = new NyToysFactory();
+$nyHelicopter = $nyToyFactory->createToy('helicopter');
+$nyHelicopter->prepare();
+
+$nyHelicopter->engine->name; //engine
+$nyHelicopter->rotorBlade->number; //1
+```
