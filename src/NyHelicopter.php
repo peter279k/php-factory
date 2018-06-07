@@ -4,8 +4,8 @@ namespace Peter\Factory;
 
 class NyHelicopter extends Toy
 {
-    public $name  = 'NyCar';
-    public $price = 30;
+    public $name  = 'NyHelicopter';
+    public $price = 300000;
     public $componentsFactory = null;
 
     public function  __construct(ComponentsFactory $componentsFactory)
