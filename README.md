@@ -1,7 +1,7 @@
 # php-factory
 
 [![Build Status](https://travis-ci.org/peter279k/php-factory.svg?branch=master)](https://travis-ci.org/peter279k/php-factory)
-
+[![Coverage Status](https://coveralls.io/repos/github/peter279k/php-factory/badge.svg?branch=master)](https://coveralls.io/github/peter279k/php-factory?branch=master)
 
 ## Introduction
 

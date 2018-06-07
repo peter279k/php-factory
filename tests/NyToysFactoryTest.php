@@ -12,19 +12,24 @@ class NyToysFactoryTest extends TestCase
     public function toyDataProvider()
     {
         return [
-            ['car', NyCar::class],
-            ['helicopter', NyHelicopter::class],
+            ['car', NyCar::class, 30, 'NyCar', 'NyCar is packaged', 'NyCar is priced at 30'],
+            ['helicopter', NyHelicopter::class, 300000, 'NyHelicopter', 'NyHelicopter is packaged', 'NyHelicopter is priced at 300000'],
         ];
     }
 
     /**
      * @dataProvider toyDataProvider
      */
-    public function testCreateToy($toyName, $expectedInstance)
+    public function testCreateToy($toyName, $expectedInstance, $expectedPrice, $expectedName, $expectedPackage, $expectedLabel)
     {
         $nyToyFactory = new NyToysFactory();
+        $nyToy = $nyToyFactory->createToy($toyName);
 
-        $this->assertInstanceOf($expectedInstance, $nyToyFactory->createToy($toyName));
+        $this->assertInstanceOf($expectedInstance, $nyToy);
+        $this->assertSame($expectedPrice, $nyToy->price);
+        $this->assertSame($expectedName, $nyToy->name);
+        $this->assertSame($expectedPackage, $nyToy->package());
+        $this->assertSame($expectedLabel, $nyToy->label());
     }
 
     public function testCreateToyWithInvalidToyName()
