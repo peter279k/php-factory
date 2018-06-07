@@ -1,0 +1,34 @@
+{
+    "name": "peter/factory",
+    "description": "The demonstration of the factory design pattern in PHP",
+    "keywords": [
+        "factory",
+        "design pattern"
+    ],
+    "homepage": "https://github.com/peter279k/php-factory",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Lee",
+            "email": "peter279k@gmail.com",
+            "homepage": "https://github.com/peter279k/php-factory",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Peter\\Factory\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Peter\\Factory\\Tests\\": "tests/"
+        }
+    }
+}
